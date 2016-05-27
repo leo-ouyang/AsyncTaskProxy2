@@ -1,7 +1,5 @@
 package leo.android.core.asynctaskproxy2.commons;
 
-import android.util.Log;
-
 /**
  * Created by leo on 16-5-25.
  */

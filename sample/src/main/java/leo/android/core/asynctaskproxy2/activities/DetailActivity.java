@@ -1,16 +1,13 @@
 package leo.android.core.asynctaskproxy2.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.List;
 
 import leo.android.core.AsyncCallback;
 import leo.android.core.MethodAsyncTask;
@@ -18,12 +15,11 @@ import leo.android.core.asynctaskproxy2.R;
 import leo.android.core.asynctaskproxy2.beans.Article;
 import leo.android.core.asynctaskproxy2.commons.Consts;
 import leo.android.core.asynctaskproxy2.commons.Logger;
-import leo.android.core.asynctaskproxy2.dao.IArticleDao;
-import leo.android.core.asynctaskproxy2.dao.impl.ArticleDao;
+import leo.android.core.asynctaskproxy2.dao.ArticleDao;
 
 public class DetailActivity extends AppCompatActivity {
 
-    private IArticleDao mArticleDao;
+    private ArticleDao mArticleDao;
     private MethodAsyncTask mArticleTextMAT;
     private Article mArticle;
     private TextView mTextView;

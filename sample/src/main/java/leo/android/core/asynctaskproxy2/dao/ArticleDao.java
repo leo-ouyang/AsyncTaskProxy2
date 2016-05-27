@@ -1,7 +1,6 @@
-package leo.android.core.asynctaskproxy2.dao.impl;
+package leo.android.core.asynctaskproxy2.dao;
 
 import android.content.Context;
-import android.os.Environment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,22 +8,19 @@ import java.util.List;
 import leo.android.core.AsyncCallback;
 import leo.android.core.AsyncTaskProxy;
 import leo.android.core.MethodAsyncTask;
-import leo.android.core.asynctaskproxy2.commons.Consts;
 import leo.android.core.asynctaskproxy2.beans.Article;
+import leo.android.core.asynctaskproxy2.commons.Consts;
 import leo.android.core.asynctaskproxy2.commons.Logger;
-import leo.android.core.asynctaskproxy2.dao.IArticleDao;
 import leo.commons.http.HttpRequester;
 import leo.commons.http.Request;
 import leo.commons.http.RequestIOException;
 import leo.commons.http.Response;
 import leo.commons.lang.Matcher;
-import leo.commons.util.FileUtil;
-import leo.commons.util.StringUtil;
 
 /**
  * Created by leo on 16-5-25.
  */
-public class ArticleDao extends AsyncTaskProxy<IArticleDao> implements IArticleDao {
+public class ArticleDao extends AsyncTaskProxy<ArticleDao> {
 
     public ArticleDao(Context context) {
         super(context);
