@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import leo.android.cglib.proxy.Enhancer;
+import leo.android.cglib.proxy.MethodInterceptor;
+import leo.android.cglib.proxy.MethodProxy;
 import leo.android.core.MethodAsyncTask.MethodAsyncTaskListener;
-import leo.android.proxy.Enhancer;
-import leo.android.proxy.MethodInterceptor;
-import leo.android.proxy.MethodProxy;
 import android.content.Context;
 
 public class AsyncTaskProxy<T> implements MethodAsyncTaskListener {
