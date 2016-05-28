@@ -1,5 +1,5 @@
 # AsyncTaskProxy2
-Define or call an AsyncTask like to define or call a method, a class can define multiple AsyncTask methods, the AsyncTaskProxy2's implementation based on [CGLIB-for-Android](https://github.com/leo-ouyang/CGLIB-for-Android), which is a library can dynamically generate dex code.
+Define or call an AsyncTask like to define or call a method, a class can define multiple AsyncTask methods, the AsyncTaskProxy2's implementation based on [CGLib-for-Android](https://github.com/leo-ouyang/CGLib-for-Android), which is a library can dynamically generate dex code.
 
 <br>
 There's another implementation [AsyncTaskProxy](https://github.com/leo-ouyang/AsyncTaskProxy) which design by JDK dynamic proxy.
